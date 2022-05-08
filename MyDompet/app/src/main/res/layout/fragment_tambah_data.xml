@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.tambah_data.TambahDataFragment"
+  android:layout_marginBottom="24dp">
+
+
+  <View
+    android:id="@+id/tambah_data_top_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:background="@drawable/bg_purple_gradient"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tittle_tambah_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:fontFamily="@font/nunito"
+    android:text="@string/title_tambah_data"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/text_bulan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="32dp"
+    android:text="@string/tittle_pilih_tanggal"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tambah_data_top_bar" />
+
+  <Button
+    android:id="@+id/buttonDatePicker"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+    android:textSize="14sp"
+    android:background="@drawable/dropdown_button"
+    android:text="@string/pilih_tanggal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_bulan" />
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:fontFamily="@font/nunito"
+    android:text="@string/tittle_jenis_transaksi"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonDatePicker" />
+
+  <FrameLayout
+    android:id="@+id/frameLayout3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/dropdown_button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    <Spinner
+      android:id="@+id/button_jenis_transaksi"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      style="?android:spinnerStyle"
+      android:textColor="@color/black"
+      android:fontFamily="@font/nunito"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+    android:textSize="14sp"
+    android:text="@string/nama_transaksi"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+  <EditText
+    android:id="@+id/inputNamaTransaksi"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:autofillHints="@string/nama_transaksi"
+    android:fontFamily="@font/nunito"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/jumlah_transaksi"
+    android:fontFamily="@font/nunito"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputNamaTransaksi" />
+
+  <EditText
+    android:id="@+id/inputNominal"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:fontFamily="@font/nunito"
+    android:layout_marginRight="16dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:autofillHints="50000"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <TextView
+    android:id="@+id/textView19"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+    android:textSize="14sp"
+    android:text="Keterangan"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputNominal" />
+
+  <EditText
+      android:id="@+id/inputKeterangan"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:ems="10"
+      android:fontFamily="@font/nunito"
+      android:hint="Pemasukan/Pengeluaran"
+      android:inputType="textPersonName"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+  <TextView
+    android:id="@+id/textView15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:fontFamily="@font/nunito"
+    android:text="Keterangan Gambar"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputKeterangan" />
+
+  <ImageView
+    android:id="@+id/inputImageKeterangan"
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:src="@android:drawable/ic_menu_gallery"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+  <Button
+    android:id="@+id/buttonPilihGambar"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/dropdown_button"
+    android:fontFamily="@font/nunito"
+    android:text="@string/pilih_gambar"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputImageKeterangan" />
+
+  <Button
+    android:id="@+id/tambahData"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="28dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/card_pemasukan"
+    android:fontFamily="@font/nunito"
+    android:text="@string/title_tambah_data"
+    android:textColor="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonPilihGambar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

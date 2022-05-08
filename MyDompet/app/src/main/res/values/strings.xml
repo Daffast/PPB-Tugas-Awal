@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">MyDompet</string>
+  <string name="title_home">Home</string>
+  <string name="title_tambah_data">Tambah Data</string>
+  <string name="riwayat_transaksi">Riwayat Transaksi</string>
+  <string name="tittle_pilih_tanggal">Pillih Tanggal</string>
+  <string name="tittle_jenis_transaksi">Jenis Transaksi</string>
+  <string name="nama_transaksi">Nama Transaksi</string>
+  <string name="jumlah_transaksi">Jumlah Pemasukan/Pengeluaran</string>
+  <string name="saldo">Saldo</string>
+  <string name="pemasukan">Pemasukan</string>
+  <string name="pengeluaran">Pengeluaran</string>
+  <string name="pilih_tanggal">Pilih Tanggal</string>
+  <string name="hapus">Hapus</string>
+  <string name="pilih_gambar">Pilih Gambar</string>
+
+  <string-array name="array_jenis_transaksi">
+    <item>Pemasukan</item>
+    <item>Pengeluaran</item>
+  </string-array>
+</resources>
